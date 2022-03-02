@@ -1,0 +1,160 @@
+body {
+    background-color: hsl(235, 21%, 11%);
+}
+
+hr {
+    width: 300px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+
+.todo {
+    position: absolute;
+    top: 80px;
+    left: 515px;
+    color: white;
+    font-size: 28px;
+    font-family: Josefin Sans;
+    font-weight: 700;
+}
+
+.todo-task-container img[alt="checkbox"] {
+    height: 20px;
+}
+
+.todo-task-container {
+    position: absolute;
+    top: 160px;
+    width: 530px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3px;
+    padding: 10px;
+}
+
+.pending-task-container img[alt="checkbox"] {
+    height: 20px;
+}
+
+.pending-task-container {
+    position: absolute;
+    top: 240px;
+    width: 530px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3px;
+    padding: 10px;
+}
+
+.pending-task-container img[alt="icon-complete"] {
+    height: 20px;
+}
+
+
+/* .todo-task-container .task1{
+    background-color: rgb(255, 255, 255);
+    max-width: 30%;
+
+    position: absolute;
+    top: 150px;
+    left: 518px;
+    padding: 10px;
+} */
+
+.todo-task-container .new-task{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+    max-width: 100%;
+
+    position: relative;
+    left: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pending-task-container .completed-task{
+    text-decoration: line-through;
+    color: rgb(160, 156, 156);
+    font-weight: 700;
+
+    background-color: hsl(235, 24%, 19%);
+    max-width: 100%;
+
+    position: relative;
+    left: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pending-task-container .in-process-task{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+    max-width: 100%;
+    font-weight: 700;
+
+
+    position: relative;
+    left: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Status bar */
+.status-bar {
+    background-color: hsl(235, 24%, 19%);
+    position: absolute;
+    top: 600px;
+    left: 516px;
+    width: 513px;
+    border-radius: 10px;   
+     
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.status-bar > div {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+
+    font-size: 14px;
+    color: hsl(235, 19%, 35%);
+    font-family: Josefin Sans;
+}
+
+.status-bar .amount {
+    font-size: 10px;
+}
+
+.status-bar .all {
+    color: rgb(85, 85, 236);
+}
+
+/* Drag Drop instruction */
+.drag-drop {
+    position: absolute;
+    top: 680px;
+    left: 690px;
+    font-family: Josefin Sans;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(160, 156, 156);
+}
+
+.attribution {
+    position: absolute;
+    top: 730px;
+    left: 600px;
+    font-family: Josefin Sans;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(160, 156, 156);
+}
