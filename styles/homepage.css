@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+:root {
+  --text-color: rgb(94, 108, 132);
+  --white: #fff;
+  --create-button-bg: rgb(163, 139, 68);
+  --list-column-color: rgb(235, 236, 240);
+
+  /* Main content */
+  --title-color: rgb(23, 43, 77);
+
+  /* Side menu */
+  --menu-bg: rgb(109, 85, 12);
+
+  /* Buttons */
+  --idle-state-color: rgb(212, 203, 203);
+  --addBtn-color: rgb(15, 201, 15);
+  --delBtn-color: red;
+}
+
+header {
+  display: block;
+}
+
+hr {
+  margin-top: 10px;
+  color: rgb(168, 139, 51);
+}
+
+/* Side Menu */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background-color: var(--menu-bg);
+}
+
+.item-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.workspace-info {
+  display: flex;
+  margin-top: 12px;
+}
+
+.workspace-info .img-wrapper {
+  padding-left: 16px;
+}
+
+.workspace-info__name > h3,
+p {
+  margin-left: 10px;
+  background-color: var(--menu-bg);
+  color: var(--white);
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: var(--menu-bg);
+  margin: 0;
+}
+
+.nav-item {
+  margin: 10px;
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 12px;
+  transition: all 0.3s ease 0s;
+}
+
+#create-bt {
+  background-color: var(--create-button-bg);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar-idle {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-idle img[alt="Trello-logo-full"] {
+  width: 75px;
+  height: 31px;
+}
+
+/* Menu Items */
+.items {
+  background-color: var(--menu-bg);
+}
+
+.items label {
+  color: var(--white);
+  font-weight: 600;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+}
+
+.menu-item {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.menu-item .title {
+  margin-left: 12px;
+}
+
+.item-container {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Overview */
+.overview {
+  margin-top: 12px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Workspace views */
+.workspace-view {
+  margin-top: 12px;
+}
+
+.workspace-view .title {
+  font-style: italic;
+}
+
+/* My board views */
+.myboard {
+  margin-top: 12px;
+}
+
+/* .myboard__board-1 {
+    display: flex;
+} */
+
+/* Main region */
+.main-region {
+  width: 80%;
+  position: absolute;
+  top: 60.4;
+  right: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.main-region .img-wrapper {
+  height: 100%;
+}
+
+.main-region .img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Content container */
+
+.container {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  color: var(--text-color);
+}
+
+/* Columns */
+.main-region_lists-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  align-items: flex-start;
+
+  position: absolute;
+  top: 20px;
+  left: 0px;
+
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--list-column-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+
+  width: 20%;
+}
+
+.list-heading > .title {
+  font-weight: 600;
+  color: var(--title-color);
+  text-align: left;
+  padding-left: 1rem;
+  margin-left: 10px;
+}
+
+.list-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  text-align: left;
+}
+
+/* Button */
+.list-heading > .buttons {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 23px;
+  height: 23px;
+  background: var(--idle-state-color);
+}
+
+.button__add:hover {
+  background-color: var(--addBtn-color);
+}
+
+.button__delete:hover {
+  background-color: var(--delBtn-color);
+}

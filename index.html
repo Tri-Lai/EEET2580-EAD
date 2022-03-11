@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boards | Trello</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="shortcut icon" href="images/trello-logo.ico">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navigation bar -->
+        <header class="navbar">
+            <div class="navbar-idle">
+                <a href="" class="logo"><img src="images/Trello-logo-full.ico" alt="Trello-logo-full"></a>
+                <a href="" class="nav-item">Workspaces</a>
+                <a href="" class="nav-item">Recent</a>
+                <a href="" class="nav-item">Starred</a>
+                <a href="" class="nav-item">Templates</a>
+                <a href="" class="nav-item" id="create-bt">Create</a>
+            </div>
+        </header>
+
+        <!-- Menu -->
+        <div class="menu">
+            <!-- User workspace: title, status, workspace logo -->
+            <div class="workspace-info">
+                <div class="img-wrapper">
+                    <svg width="36" height="36">
+                        <defs>
+                            <clipPath id="workspaceLogo">
+                                <rect width="36" height="36" stroke="white" stroke-width="4" />
+                            </clipPath>
+                        </defs>
+                        <image width="36" height="36" xlink:href="images/workspace-logo.jpg"
+                            clip-path="url(#workspaceLogo)" />
+                    </svg>
+                </div>
+
+                <div class="workspace-info__name">
+                    <h3 class="name">My Workspace</h3>
+                    <p class="status">Free</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="items">
+                <div class="overview">
+                    <!-- Boards -->
+                    <div class="menu-item">
+                        <div class="img-wrapper">
+                            <svg width="16" height="16">
+                                <defs>
+                                    <clipPath id="boards-logo">
+                                        <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                    </clipPath>
+                                </defs>
+                                <image width="16" height="16" xlink:href="images/trello-logo-2.png"
+                                    clip-path="url(#boards-logo)" />
+                            </svg>
+                        </div>
+
+                        <div class="title">
+                            <a href="" class="item-link">Boards</a>
+                        </div>
+                    </div>
+
+                    <!-- Members -->
+                    <div class="menu-item">
+                        <div class="img-wrapper">
+                            <svg width="16" height="16">
+                                <defs>
+                                    <clipPath id="member-logo">
+                                        <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                    </clipPath>
+                                </defs>
+                                <image width="16" height="16" xlink:href="images/member-logo.jpg"
+                                    clip-path="url(#member-logo)" />
+                            </svg>
+                        </div>
+
+                        <div class="title">
+                            <a href="" class="item-link">Members</a>
+                        </div>
+                    </div>
+
+                    <!-- Settings -->
+                    <div class="menu-item">
+                        <div class="img-wrapper">
+                            <svg width="16" height="16">
+                                <defs>
+                                    <clipPath id="settings-logo">
+                                        <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                    </clipPath>
+                                </defs>
+                                <image width="16" height="16" xlink:href="images/setting-logo.jpg"
+                                    clip-path="url(#settings-logo)" />
+                            </svg>
+                        </div>
+
+                        <div class="title">
+                            <a href="" class="item-link">Settings</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="workspace-view">
+                    <label for="workspaceView">Workspace views</label>
+
+                    <div class="item-container">
+                        <div class="menu-item">
+                            <div class="img-wrapper">
+                                <svg width="16" height="16">
+                                    <defs>
+                                        <clipPath id="table-logo">
+                                            <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                        </clipPath>
+                                    </defs>
+                                    <image width="16" height="16" xlink:href="images/table-logo.jpg"
+                                        clip-path="url(#table-logo)" />
+                                </svg>
+                            </div>
+
+                            <div class="title">
+                                <a href="" class="item-link">Table</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="img-wrapper">
+                                <svg width="16" height="16">
+                                    <defs>
+                                        <clipPath id="calendar-logo">
+                                            <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                        </clipPath>
+                                    </defs>
+                                    <image width="16" height="16" xlink:href="images/calendar-icon.jpg"
+                                        clip-path="url(#calendar-logo)" />
+                                </svg>
+                            </div>
+
+                            <div class="title">
+                                <a href="" class="item-link">Calendar</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="myboard">
+                    <label for="myBoard">Your boards</label>
+                    <div class="item-container">
+                        <div class="menu-item">
+                            <div class="img-wrapper">
+                                <svg width="16" height="16">
+                                    <defs>
+                                        <clipPath id="table-logo">
+                                            <rect width="16" height="16" stroke="white" stroke-width="4" />
+                                        </clipPath>
+                                    </defs>
+                                    <image width="16" height="16" xlink:href="images/table-logo.jpg"
+                                        clip-path="url(#table-logo)" />
+                                </svg>
+                            </div>
+
+                            <div class="title">
+                                <a href="" class="item-link">Webdev app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main region -->
+        <div class="main-region">
+
+            <div class="container">
+                <div class="img-wrapper">
+                    <img src="images/main-background.jpg" alt="">
+                </div>
+
+                <div class="main-region_lists-container">
+                    <div class="list list__list1">
+
+                        <div class="list-heading">
+                            <div class="title">
+                                <label for="title">Backlog</label>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="button button__add" onclick="addTask(this)">+</button>
+                                <button class="button button__delete" onclick="deleteTask(this)">-</button>
+                            </div>
+                        </div>
+
+                        <div class="draggable" draggable="true">Homepage</div>
+                        <div class="draggable" draggable="true">Content page</div>
+                        <div class="draggable" draggable="true">Postgres Database</div>
+                    </div>
+
+
+                    <div class="list list2">
+                        <div class="list-heading">
+                            <div class="title">
+                                <label for="title">Todo</label>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="button button__add" onclick="addTask(this)">+</button>
+                                <button class="button button__delete" onclick="deleteTask(this)">-</button>
+                            </div>
+                        </div>
+
+                        <div class="draggable" draggable="true">Design wireframe</div>
+                        <div class="draggable" draggable="true">Navbar</div>
+                        <div class="draggable" draggable="true">App: Calculate progress</div>
+                        <div class="draggable" draggable="true">App: Invite collaborators</div>
+                        <div class="draggable" draggable="true">Add due date</div>
+                        <div class="draggable" draggable="true">Update UX</div>
+                        <div class="draggable" draggable="true">Footer</div>
+                        <div class="draggable" draggable="true">Navbar</div>
+                    </div>
+
+                    <div class="list list3">
+                        <div class="list-heading">
+                            <div class="title">
+                                <label for="title">In-process</label>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="button button__add" onclick="addTask(this)">+</button>
+                                <button class="button button__delete" onclick="deleteTask(this)">-</button>
+                            </div>
+                        </div>
+                        <div class="draggable" draggable="true">Fetch API</div>
+                        <div class="draggable" draggable="true">Login page</div>
+                        <div class="draggable" draggable="true">Pricing page</div>
+                        <div class="draggable" draggable="true">FAQs page</div>
+                    </div>
+
+                    <div class="list list4">
+                        <div class="list-heading">
+                            <div class="title">
+                                <label for="title">Done</label>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="button button__add" onclick="addTask(this)">+</button>
+                                <button class="button button__delete" onclick="deleteTask(this)">-</button>
+                            </div>
+                        </div>
+                        <div class="draggable" draggable="true">App: Drag and Drop</div>
+                        <div class="draggable" draggable="true">App UI</div>
+                        <div class="draggable" draggable="true">Black mode</div>
+                        <div class="draggable" draggable="true">CRUD operation</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/drag-drop.js" defer></script>
+    <script src="script/add-delete.js" defer></script>
+</body>
+
+</html>
